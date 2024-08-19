@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@400;500;600;700&family=Ruda:wght@400..900&family=Sankofa+Display&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ruda", sans-serif;
+}
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding: 10px;
+}
+.nav-bar .nav-logo {
+  padding-top: 10px;
+  padding-left: 30px;
+}
+.nav-bar .nav-logo a {
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+.nav-bar .nav-logo a span {
+  padding-right: 2px;
+  color: orange;
+}
+.nav-links {
+  padding-top: 10px;
+}
+.nav-links ul {
+  display: flex;
+  gap: 15px;
+  margin-right: 40px;
+}
+.nav-links ul li {
+  list-style: none;
+}
+.nav-links ul li a {
+  font-size: 17px;
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 28%;
+  z-index: 1;
+}
+
+.carousel-caption h5 {
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+.carousel-caption p {
+  margin: auto;
+  font-size: 20px;
+  width: 60%;
+}
+
+.carousel-inner::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+.about-text {
+  padding-top: 60px;
+}
+
+.about-text h2 {
+  width: 70%;
+}
+
+.about-text p {
+  font-size: 19px;
+}
+
+.about-section {
+  background-color: rgb(250, 247, 243);
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.about-section .image-container {
+  width: 370px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-section .image-container img {
+  width: 350px;
+}
+
+.about-section .text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 40px;
+}
+.about-section .text-container p {
+  display: flex;
+  width: 0 auto;
+}
+
+.our-service-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.our-service-section .our-service-heading {
+  text-align: center;
+}
+.three-services-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.three-services-cards .service-card {
+  text-align: center;
+  background: #000;
+  color: white;
+  width: 300px;
+  padding-top: 20px;
+  border-radius: 10px;
+  padding: 20px 15px 30px 15px;
+}
+
+.three-services-cards .service-card i {
+  font-size: 35px;
+}
+
+.three-services-cards .service-card h4 {
+  font-size: 25px;
+  font-weight: bold;
+}
+.three-services-cards .service-card p {
+  font-size: 18px;
+}
+
+.our-projects-section {
+  background-color: beige;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.our-projects-section .projects-heading {
+  text-align: center;
+}
+
+.three-projects-cards {
+  padding-top: 20px;
+  padding-left: 80px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.three-projects-cards .project-card {
+  border: 1px solid;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 10px 10px 14px gray;
+  border-radius: 5px;
+}
+.three-projects-cards .project-card .image-for-card {
+  width: 300px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.three-projects-cards .project-card .image-for-card img {
+  width: 300px;
+  border-radius: 5px;
+}
+
+.three-projects-cards .project-card .projects-heading {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* Our Team Section */
+
+.our-team-section {
+  background-color: rgb(208, 204, 204);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.our-team-section .team-heading {
+  text-align: center;
+}
+
+.four-team-cards {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.four-team-cards .team-card {
+  background-color: white;
+  border: 1px solid;
+  width: 250px;
+  border-radius: 5px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.four-team-cards .team-card .image-for-card img {
+  border-radius: 65px;
+}
+
+.four-team-cards .team-card .team-heading .icons-for-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+}
+
+/* ------ Contact us form section --------- */
+
+.contact-us-section {
+  padding: 80px;
+}
+.contact-us-section .contact-us-heading {
+  text-align: center;
+}
+
+.contact-us-form {
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.contact-us-form input {
+  padding: 10px;
+}
+.contact-us-form textarea {
+  padding: 10px;
+}
+
+.footer-section {
+  background: #000;
+  padding: 15px;
+  color: white;
+  text-align: center;
+}
+@media only screen and (max-width: 800px) {
+  .nav-bar {
+    position: static;
+  }
+
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .about-section .image-container {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-section .image-container img {
+    width: 300px;
+  }
+
+  .text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .about-section .text-container p {
+    display: flex;
+    width: 0 auto;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-bar .nav-logo a {
+    font-size: 18px;
+    padding-right: 40px;
+  }
+  .nav-links ul {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .about-section .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+  }
+}
